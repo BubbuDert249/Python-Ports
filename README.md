@@ -8,9 +8,8 @@ This bypasses using commands like ares-package <br>
 Firefox OS: <br>
 - Enable developer mode (Settings > Device Information > More info > Developer Mode) <br>
 - Connect the device via USB <br>
-- Use Firefox WebIDE (old firefox desktop) or Remote Debugging tools. <br>
-   Alternatively, push the app via ADB commands: <br>
-   ``adb push foxpy.zip /sdcard/foxpy.zip`` <br>
+- Push the app to the device:<br>
+   ```adb push foxpy.zip /sdcard/foxpy.zip``` <br>
    <br>
 TV webOS: <br>
 - Enable Developer Mode app on your webOS TV <br>
@@ -26,11 +25,11 @@ Tizen: <br>
   ```sdb install tizenpy.wgt``` <br>
    <br>
    OpenHarmony: <br>
- - Download DevEco IDE for "hdc" <br>
- - Unzip the harmonypy.app file from the harmonypy.zip <br>
- - Connect your device to your PC <br>
- - Open a Terminal/Command prompt <br>
- - Verify that its connected: <br>
+- Download DevEco IDE for "hdc" <br>
+- Unzip the harmonypy.app file from the harmonypy.zip <br>
+- Connect your device to your PC <br>
+- Open a Terminal/Command prompt <br>
+- Verify that its connected: <br>
    ```hdc list targets``` <br>
 - Install it via: <br>
   ```hdc shell am start -n org.bubbudert.harmonypy/.harmonypy``` <br>
