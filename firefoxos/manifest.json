@@ -1,0 +1,12 @@
+{
+  "name": "FoxPy",
+  "description": "Python interpreter for Firefox OS and KaiOS",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icon.png"
+  },
+  "developer": {
+    "name": "BubbuDert"
+  },
+  "default_locale": "en"
+}
