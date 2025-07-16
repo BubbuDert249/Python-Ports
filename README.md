@@ -8,7 +8,7 @@ This bypasses using commands like ares-package <br>
 Firefox OS: <br>
 - Enable developer mode (Settings > Device Information > More info > Developer Mode) <br>
 - Connect the device via USB <br>
-- Use Firefox WebIDE (firefox desktop old versions) or Remote Debugging tools. <br>
+- Use Firefox WebIDE (old firefox desktop) or Remote Debugging tools. <br>
    Alternatively, push the app via ADB commands: <br>
    ``adb push foxpy.zip /sdcard/foxpy.zip`` <br>
    <br>
