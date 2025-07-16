@@ -6,3 +6,4 @@ This bypasses using commands like ares-package <br>
 The Firefox OS port is a hybrid app for KaiOS 3.0+ or older and Firefox OS, by combining manifest.json (KaiOS 3.0+) and manifest.webapp (KaiOS 3.0 or older and Firefox OS) <br>
 NOTE: The BlackBerry port only works for BlackBerry 8, 9 and 10 <br>
 The thing that makes the BlackBerry port from BB8, is because BlackBerry 7 has too old Webkit to run the Python interpreter <br>
+All of these ports use Brython, and in development Pyodide, but Pyodide was too powerful for these devices. <br>
