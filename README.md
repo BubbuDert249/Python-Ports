@@ -1,5 +1,4 @@
 # Python Ports
-This repository shows how far Python ports can go <br>
 The Tizen, OpenHarmony and Firefox OS port is just the files zipped <br>
 The webOS port required me to make 2 Gzip compressed tarballs (.tar.gz) and a .ar archive (renamed to .ipk) <br>
 This bypasses using commands like ares-package <br>
