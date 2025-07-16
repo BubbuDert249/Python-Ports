@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FoxPy - Python on Firefox OS</title>
+  <link rel="stylesheet" href="app.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.3/brython.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.3/brython_stdlib.js"></script>
+</head>
+<body onload="brython()">
+
+<div id="tabs">
+  <div class="tab active" data-tab="script">Script</div>
+  <div class="tab" data-tab="terminal">Terminal</div>
+</div>
+
+<div id="content">
+  <div id="script" class="active">
+    <textarea id="code" spellcheck="false">print("Hello from FoxPy!")</textarea>
+    <br />
+    <button id="runBtn">Run Python</button>
+    <pre id="output"></pre>
+  </div>
+
+  <div id="terminal">
+    <pre id="terminalOutput"></pre>
+    <input id="terminalInput" type="text" placeholder="Enter JS command (e.g. alert('hi'))" autocomplete="off" />
+  </div>
+</div>
+
+<script src="app.js"></script>
+
+<!-- Python script handler -->
+<script type="text/python">
+from browser import document
+import sys
+
+class OutputCatcher:
+    def __init__(self, element_id):
+        self.output_elem = document[element_id]
+        self.output_elem.textContent = ''
+    def write(self, data):
+        self.output_elem.textContent += data
+    def flush(self):
+        pass
+
+sys.stdout = OutputCatcher('output')
+sys.stderr = OutputCatcher('output')
+
+def run_python_code(ev):
+    code = document["code"].value
+    # clear output each run
+    document["output"].textContent = ""
+    try:
+        exec(code)
+    except Exception as e:
+        document["output"].textContent = f"Error: {e}"
+
+document["runBtn"].bind("click", run_python_code)
+
+</script>
+
+</body>
+</html>
+s
