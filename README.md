@@ -1,9 +1,8 @@
 # Python Ports
 This repository shows how far Python ports can go <br>
-The Tizen and Firefox OS port is just the files zipped <br>
+The Tizen, OpenHarmony and Firefox OS port is just the files zipped <br>
 The webOS port required me to make 2 Gzip compressed tarballs (.tar.gz) and a .ar archive (renamed to .ipk) <br>
 This bypasses using commands like ares-package <br>
-All of these ports use Brython, and in development Pyodide, but Pyodide was too powerful for these devices. <br>
 <br>
 # INSTALLATION: <br>
 Firefox OS: <br>
@@ -25,3 +24,12 @@ Tizen: <br>
 - Connect device via USB or Wi-Fi <br>
 - Install app with: <br>
   ```sdb install tizenpy.wgt``` <br>
+   <br>
+   OpenHarmony: <br>
+   - Download DevEco IDE for "hdc" <br>
+   - Connect your device to your PC <br>
+   - Open a Terminal/Command prompt <br>
+   - Verify that its connected: <br>
+     ```hdc list targets``` <br>
+   - Install it via: <br>
+     ```hdc shell am start -n org.bubbudert.harmonypy/.harmonypy``` <br>
