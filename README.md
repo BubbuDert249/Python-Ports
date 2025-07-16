@@ -1,5 +1,5 @@
 # Python Ports
-The Tizen, OpenHarmony and Firefox OS port is just the files zipped <br>
+The Tizen, OpenHarmony and Firefox OS/KaiOS port is just the files zipped <br>
 The webOS port required me to make 2 Gzip compressed tarballs (.tar.gz) and a .ar archive (renamed to .ipk) <br>
 This bypasses using commands like ares-package <br>
 <br>
@@ -9,6 +9,12 @@ Firefox OS: <br>
 - Connect the device via USB <br>
 - Push the app to the device:<br>
    ```adb push foxpy.zip /sdcard/foxpy.zip``` <br>
+KaiOS: <br>
+ - On your KaiOS device, enable Developer Mode (in settings or dialing a code) <br>
+ - Connect your KaiOS phone to your PC via USB <br>
+ - Download KaiOS Developer Tools <br>
+ - Install the app: <br>
+    ```kadeploy --install foxpy.zip``` <br>
    <br>
 TV webOS: <br>
 - Enable Developer Mode app on your webOS TV <br>
