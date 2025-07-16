@@ -9,6 +9,7 @@ Firefox OS: <br>
 - Connect the device via USB <br>
 - Push the app to the device:<br>
    ```adb push foxpy.zip /sdcard/foxpy.zip``` <br>
+   <br>
 KaiOS: <br>
  - On your KaiOS device, enable Developer Mode (in settings or dialing a code) <br>
  - Connect your KaiOS phone to your PC via USB <br>
