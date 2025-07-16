@@ -1,0 +1,17 @@
+{
+  "name": "org.bubbudert.harmonypy",
+  "version": "1.0.0",
+  "description": "Python for OpenHarmony",
+  "entry": "index.html",
+  "permissions": [],
+  "sdkVersion": "3",
+  "minPlatformVersion": "5.0",
+  "compatibleDevices": [
+    "phone",
+    "tablet",
+    "tv",
+    "wearable",
+    "car",
+    "smartHome"
+  ]
+}
