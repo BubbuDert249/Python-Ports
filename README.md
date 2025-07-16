@@ -13,7 +13,7 @@ Firefox OS: <br>
 1. Enable developer mode (Settings > Device Information > More info > Developer Mode) <br>
 2. Connect the device via USB <br>
 3. Use Firefox WebIDE (firefox desktop old versions) or Remote Debugging tools. <br>
-   Alternatively, push the app via ADB commands
+   Alternatively, push the app via ADB commands: <br>
    ```adb push foxpy.zip /sdcard/foxpy.zip``` <br>
    <br>
 KaiOS: <br>
