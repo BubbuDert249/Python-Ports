@@ -6,7 +6,7 @@ This bypasses using commands like ares-package <br>
 <br>
 # INSTALLATION: <br>
 Firefox OS: <br>
-- Enable developer mode (Settings > Device Information > More info > Developer Mode) <br>
+- Enable Developer mode <br>
 - Connect the device via USB <br>
 - Push the app to the device:<br>
    ```adb push foxpy.zip /sdcard/foxpy.zip``` <br>
@@ -25,6 +25,7 @@ Tizen: <br>
   ```sdb install tizenpy.wgt``` <br>
    <br>
    OpenHarmony: <br>
+- Enable developer mode <br>
 - Download DevEco IDE for "hdc" <br>
 - Unzip the harmonypy.app file from the harmonypy.zip <br>
 - Connect your device to your PC <br>
