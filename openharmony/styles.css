@@ -1,0 +1,57 @@
+    body {
+      font-family: sans-serif;
+      background: #111;
+      color: #eee;
+      padding: 10px;
+    }
+
+    #tabs button {
+      padding: 10px;
+      margin-right: 5px;
+      background: #f70d05;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .tab {
+      display: none;
+    }
+
+    .tab.active {
+      display: block;
+    }
+
+    textarea, input {
+      width: 100%;
+      background: #222;
+      color: white;
+      border: 1px solid #f70d05;
+      padding: 10px;
+      font-family: monospace;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #f70d05;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background: #333;
+      color: #777;
+    }
+
+    pre {
+      background: #222;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      white-space: pre-wrap;
+    }
