@@ -10,33 +10,33 @@ All of these ports use Brython, and in development Pyodide, but Pyodide was too 
 <br>
 # INSTALLATION: <br>
 Firefox OS: <br>
-1. Enable developer mode (Settings > Device Information > More info > Developer Mode) <br>
-2. Connect the device via USB <br>
-3. Use Firefox WebIDE (firefox desktop old versions) or Remote Debugging tools. <br>
+- Enable developer mode (Settings > Device Information > More info > Developer Mode) <br>
+- Connect the device via USB <br>
+- Use Firefox WebIDE (firefox desktop old versions) or Remote Debugging tools. <br>
    Alternatively, push the app via ADB commands: <br>
    ```adb push foxpy.zip /sdcard/foxpy.zip``` <br>
    <br>
 KaiOS: <br>
-1. Enable Developer Options on KaiOS device (usually via multiple presses on version in settings) <br>
-2. Use KaiOS Developer Tools (available on KaiOS site) on your PC <br>
-3. Connect device via USB <br>
-4. Use the tools to sideload foxpy.zip <br>
+- Enable Developer Options on KaiOS device (usually via multiple presses on version in settings) <br>
+- Use KaiOS Developer Tools (available on KaiOS site) on your PC <br>
+- Connect device via USB <br>
+- Use the tools to sideload foxpy.zip <br>
    Alternatively, use webide or Firefox's remote debugging to install apps <br>
    <br>
 TV webOS: <br>
-1. Enable Developer Mode app on your webOS TV <br>
-2. On PC, install webOS TV CLI tools (ares-install, ares-setup-device, etc.) <br>
-3. Connect TV and PC on the same network <br>
-4. Use webOS IDE to install the app <br>
+- Enable Developer Mode app on your webOS TV <br>
+- On PC, install webOS TV CLI tools (ares-install, ares-setup-device, etc.) <br>
+- Connect TV and PC on the same network <br>
+- Use webOS IDE to install the app <br>
 <br>
 Tizen: <br>
-1. Enable Developer Mode on your Tizen device <br>
-2. Install sdb on your PC <br>
-3. Connect device via USB or Wi-Fi <br>
-4. Install app with: <br>
+- Enable Developer Mode on your Tizen device <br>
+- Install sdb on your PC <br>
+- Connect device via USB or Wi-Fi <br>
+- Install app with: <br>
   ```sdb install tizenpy.wgt``` <br>
   <br>
 BlackBerry 8 or newer: <br>
-1. Enable Developer Mode on the device <br>
-2. Connect device over USB or Wi-Fi <br>
-3. Use Sachesi or DDPB tools on PC to sideload .bar files <br>
+- Enable Developer Mode on the device <br>
+- Connect device over USB or Wi-Fi <br>
+- Use Sachesi or DDPB tools on PC to sideload .bar files <br>
