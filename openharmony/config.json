@@ -1,6 +1,7 @@
 {
   "app": {
     "name": "HarmonyPy",
+    "bundleName": "org.bubbudert.harmonypy
     "version": "1.0.0",
     "description": "Python for OpenHarmony",
     "icon": "icon.png",
