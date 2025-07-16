@@ -12,7 +12,7 @@ Firefox OS: <br>
    <br>
 TV webOS: <br>
 - Enable Developer Mode app on your webOS TV <br>
-- On PC, install webOS TV CLI tools (ares-install, ares-setup-device, etc.) <br>
+- On PC, download the webOS IDE <br>
 - Connect TV and PC on the same network <br>
 - Use webOS IDE to install the app <br>
    <br>
