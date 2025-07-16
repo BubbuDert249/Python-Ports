@@ -14,7 +14,7 @@ Firefox OS: <br>
 - Connect the device via USB <br>
 - Use Firefox WebIDE (firefox desktop old versions) or Remote Debugging tools. <br>
    Alternatively, push the app via ADB commands: <br>
-   ```adb push foxpy.zip /sdcard/foxpy.zip``` <br>
+   ``adb push foxpy.zip /sdcard/foxpy.zip`` <br>
    <br>
 KaiOS: <br>
 - Enable Developer Options on KaiOS device (usually via multiple presses on version in settings) <br>
@@ -28,7 +28,7 @@ TV webOS: <br>
 - On PC, install webOS TV CLI tools (ares-install, ares-setup-device, etc.) <br>
 - Connect TV and PC on the same network <br>
 - Use webOS IDE to install the app <br>
-<br>
+   <br>
 Tizen: <br>
 - Enable Developer Mode on your Tizen device <br>
 - Install sdb on your PC <br>
