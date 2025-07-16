@@ -27,6 +27,7 @@ Tizen: <br>
    <br>
    OpenHarmony: <br>
    - Download DevEco IDE for "hdc" <br>
+   - Unzip the harmonypy.app file from the harmonypy.zip <br>
    - Connect your device to your PC <br>
    - Open a Terminal/Command prompt <br>
    - Verify that its connected: <br>
