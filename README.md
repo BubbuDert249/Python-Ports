@@ -1,5 +1,4 @@
 # Python Ports
-The Tizen, OpenHarmony and Firefox OS/KaiOS port is just the files zipped <br>
 The webOS port required me to make 2 Gzip compressed tarballs (.tar.gz) and a .ar archive (renamed to .ipk) <br>
 This bypasses using commands like ares-package <br>
 <br>
@@ -30,7 +29,7 @@ Tizen: <br>
 - Install app with: <br>
   ```sdb install tizenpy.wgt``` <br>
    <br>
-   OpenHarmony: <br>
+OpenHarmony: <br>
 - Enable developer mode <br>
 - Download DevEco IDE for "hdc" <br>
 - Unzip the harmonypy.app file from the harmonypy.zip <br>
@@ -40,3 +39,10 @@ Tizen: <br>
    ```hdc list targets``` <br>
 - Install it via: <br>
   ```hdc shell am start -n org.bubbudert.harmonypy/.harmonypy``` <br>
+     <br>
+BlackBerry: <br>
+ - Enable Developer Mode <br>
+ - Connect the device to your PC <br>
+ - Download BlackBerry SDK Tools <br>
+ - Replace <ip> with the device serial or ID and <pass> with the device password: <br>
+   ```blackberry-deploy -installApp -device <ip> -password <pass> pyberry.bar``` <br>
