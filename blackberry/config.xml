@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0" id="org.bubbudert.pyberry">
+  <name>PyBerry</name>
+<author>BubbuDert</author>
+  <content src="index.html"/>
+  <access uri="*"/>
+  <icon src="icon.png" />
+  <feature id="blackberry.app" required="true"/>
+</widget>
