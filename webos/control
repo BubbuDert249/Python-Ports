@@ -1,0 +1,9 @@
+Package: org.bubbudert.pythonlg
+Version: 1.2.5
+Architecture: all
+Maintainer: Bubbu Dert
+Installed-Size: 1024
+Depends: webos-tv
+Section: base
+Priority: optional
+Description: This is a port of Python for a webOS TV.
