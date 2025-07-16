@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HarmonyPy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython_stdlib.js"></script>
+  
+</head>
+<body onload="brython()">
+<h3>HarmonyPy</h3>
+<div id="tabs">
+  <button onclick="switchTab('script')">Script</button>
+  <button onclick="switchTab('terminal')">Terminal</button>
+</div>
+
+<div id="script-tab" class="tab active">
+  <textarea id="code">print("Hello from HarmonyPy!")</textarea><br>
+  <button id="runBtn">Run</button>
+  <pre id="output">[Ready]</pre>
+</div>
+
+<div id="terminal-tab" class="tab">
+  <pre id="terminal-output"></pre>
+  <input id="terminal-input" placeholder=">>> enter Python code"><button id="terminalRunBtn">Enter</button>
+</div>
+
+<script src="main.js"></script>
+
+<script type="text/python">
+from browser import document, aio
+import sys, io, re
+
+output = document["output"]
+terminal_output = document["terminal-output"]
+
+async def run_code(ev):
+    code = document["code"].value
+    code = re.sub(r"^(\s*)def\s+", r"\1async def ", code, flags=re.M)
+    code = code.replace("import time", "from browser import aio")
+    code = re.sub(r"time\.sleep\((.*?)\)", r"await aio.sleep(\1)", code)
+
+    output.textContent = "[Running...]"
+
+    stdout, stderr = sys.stdout, sys.stderr
+    sys.stdout, sys.stderr = io.StringIO(), io.StringIO()
+
+    try:
+        loc = {}
+        exec("async def __user_code():\n" + "\n".join("    "+line for line in code.splitlines()), loc)
+        await loc["__user_code"]()
+        out = sys.stdout.getvalue()
+        err = sys.stderr.getvalue()
+        output.textContent = out if out else ("Error:\n" + err if err else "[No output]")
+    except Exception as e:
+        output.textContent = f"Error:\n{e}"
+    finally:
+        sys.stdout, sys.stderr = stdout, stderr
+
+def run_code_event(ev):
+    aio.run(run_code(ev))
+
+def terminal_run(ev):
+    cmd = document["terminal-input"].value
+    document["terminal-input"].value = ""
+    terminal_output.textContent += f">>> {cmd}\n"
+    try:
+        result = eval(cmd)
+        if result is not None:
+            terminal_output.textContent += f"{result}\n"
+    except Exception as e:
+        terminal_output.textContent += f"Error: {e}\n"
+    terminal_output.scrollTop = terminal_output.scrollHeight
+
+document["runBtn"].bind("click", run_code_event)
+document["terminalRunBtn"].bind("click", terminal_run)
+output.textContent = "[Brython ready]"
+</script>
+
+</body>
+</html>
