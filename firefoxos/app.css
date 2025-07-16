@@ -1,0 +1,81 @@
+ body { font-family: monospace, monospace; margin: 0; background: #1e1e1e; color: #c5c8c6; }
+  #tabs { display: flex; border-bottom: 2px solid #444; background: #2d2d2d; }
+  .tab {
+    padding: 12px 25px;
+    cursor: pointer;
+    user-select: none;
+    color: #bbb;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  .tab.active {
+    border-bottom-color: #50fa7b;
+    color: #f8f8f2;
+    font-weight: bold;
+    background: #3e3e3e;
+  }
+  #content > div { display: none; padding: 15px; height: calc(100vh - 80px); box-sizing: border-box; }
+  #content > div.active { display: block; }
+
+  textarea#code {
+    width: 100%;
+    height: 60%;
+    background: #282a36;
+    border: none;
+    color: #f8f8f2;
+    font-size: 15px;
+    resize: none;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: monospace;
+  }
+ #output {
+  white-space: pre-wrap;
+  font-family: monospace;
+  border: 1px solid #ccc;
+  padding: 8px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+
+  #runBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #50fa7b;
+    border: none;
+    color: #282a36;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #runBtn:hover {
+    background: #44c763;
+  }
+  pre#output, pre#terminalOutput {
+    margin-top: 10px;
+    background: #282a36;
+    border-radius: 5px;
+    padding: 10px;
+    height: 35%;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    color: #f8f8f2;
+  }
+
+  #terminalInput {
+    width: 100%;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 15px;
+    background: #282a36;
+    border: none;
+    color: #f8f8f2;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  #terminalInput:focus {
+    outline: 2px solid #50fa7b;
+  }
