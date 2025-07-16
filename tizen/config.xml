@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="org.bubbudert.tizenpy"
+        version="1.0.7"
+        viewmodes="maximized">
+  <tizen:application id="org.bubbudert.tizenpy" package="org.bubbudert.tizenpy" required_version="4.0"/>
+  <content src="index.html"/>
+  <name>TizenPy</name>
+  <icon src="icon.png"/>
+  <tizen:privilege name="http://tizen.org/privilege/internet"/>
+  <tizen:metadata key="http://tizen.org/appcontrol/operation/default" value="http://tizen.org/appcontrol/operation/view"/>
+</widget>
