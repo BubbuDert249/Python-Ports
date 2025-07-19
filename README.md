@@ -29,17 +29,6 @@ Tizen: <br>
 - Install app with: <br>
   ```sdb install tizenpy.wgt``` <br>
    <br>
-OpenHarmony: <br>
-- Enable developer mode <br>
-- Download DevEco IDE for "hdc" <br>
-- Unzip the harmonypy.app file from the harmonypy.zip <br>
-- Connect your device to your PC <br>
-- Open a Terminal/Command prompt <br>
-- Verify that its connected: <br>
-   ```hdc list targets``` <br>
-- Install it via: <br>
-  ```hdc shell am start -n org.bubbudert.harmonypy/.harmonypy``` <br>
-     <br>
 BlackBerry: <br>
  - Enable Developer Mode <br>
  - Connect the device to your PC <br>
