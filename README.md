@@ -36,3 +36,8 @@ BlackBerry: <br>
  - Download BlackBerry SDK Tools <br>
  - Replace <ip> with the device serial or ID and <pass> with the device password: <br>
    ```blackberry-deploy -installApp -device <ip> -password <pass> pyberry.bar``` <br>
+   <br>
+Java ME: <br>
+ - Transfer the .jar and .jad to the Java ME phone via USB or Bluetooth <br>
+ - Make sure the .jar and .jad is in the same folder <br>
+ - Open the .jad file <br>
