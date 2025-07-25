@@ -5,12 +5,13 @@ This bypasses using commands like ares-package <br>
 # INSTALLATION: <br>
 Firefox OS: <br>
 - Enable Developer mode <br>
+- Download adb <br>
 - Connect the device via USB <br>
 - Push the app to the device:<br>
    ```adb push foxpy.zip /sdcard/foxpy.zip``` <br>
    <br>
 KaiOS: <br>
- - On your KaiOS device, enable Developer Mode (in settings or dialing a code) <br>
+ - On your KaiOS device, enable Developer Mode (in settings or dialing *#*#33284#*#*) <br>
  - Connect your KaiOS phone to your PC via USB <br>
  - Download KaiOS Developer Tools <br>
  - Install the app: <br>
