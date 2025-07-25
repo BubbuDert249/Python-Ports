@@ -2,6 +2,8 @@ Manifest-Version: 1.0
 MIDlet-Name: JavaPy
 MIDlet-Version: 1.0.0
 MIDlet-Vendor: BubbuDert
-MIDlet-1: JavaPy, , JavaPy
+MIDlet-1: JavaPy, /icon.png, JavaPy
 MicroEdition-Configuration: CLDC-1.1
 MicroEdition-Profile: MIDP-2.0
+Created-By: 21.0.5 (Eclipse Adoptium)
+
